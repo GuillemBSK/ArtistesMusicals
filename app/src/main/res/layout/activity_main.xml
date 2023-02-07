@@ -7,6 +7,21 @@
     android:background="@drawable/background"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/title_main"
+        android:layout_width="189dp"
+        android:layout_height="37dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="World Tour"
+        android:textColor="#2061BD"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.948" />
+
     <Button
         android:id="@+id/button"
         android:layout_width="312dp"
@@ -26,7 +41,7 @@
         android:layout_width="312dp"
         android:layout_height="67dp"
         android:background="#66000000"
-        android:text="Concerts"
+        android:text="Preferències"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
@@ -39,7 +54,7 @@
         android:layout_width="312dp"
         android:layout_height="67dp"
         android:background="#66000000"
-        android:text="Preferències"
+        android:text="Concerts"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
@@ -63,10 +78,9 @@
         android:layout_height="283dp"
         app:layout_constraintBottom_toBottomOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.111"
+        app:layout_constraintVertical_bias="0.036"
         app:srcCompat="@drawable/didi" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

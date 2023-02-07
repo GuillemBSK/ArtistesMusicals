@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ArtistesMusicals</string>
+    <string name="link"><a href="https://google.com">Google</a></string>
 </resources>
