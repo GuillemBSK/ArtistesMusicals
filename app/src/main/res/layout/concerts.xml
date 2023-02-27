@@ -21,7 +21,7 @@
 
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="83dp" />
+                android:layout_height="42dp" />
 
             <TextView
                 android:id="@+id/textView20"
@@ -36,7 +36,7 @@
 
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="40dp" />
+                android:layout_height="18dp" />
 
             <ScrollView
                 android:layout_width="match_parent"
@@ -55,7 +55,11 @@
                         <TableRow
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:gravity="center">
+                            android:layout_marginTop="20dp"
+                            android:background="#4D000000"
+                            android:gravity="center"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp">
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -66,18 +70,24 @@
                                     android:id="@+id/textView2"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:text="LONDRES" />
+                                    android:text="LONDRES"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
 
                                 <TextView
                                     android:id="@+id/textView4"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:text="04-03-2023" />
+                                    android:text="04-03-2023"
+                                    android:textColor="#FFFFFF" />
 
                                 <Button
                                     android:id="@+id/link1"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
+                                    android:height="40dp"
+                                    android:minHeight="20dp"
                                     android:text="ENTRADES" />
 
                                 <ImageView
@@ -92,7 +102,11 @@
                         <TableRow
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:gravity="center">
+                            android:layout_marginTop="20dp"
+                            android:background="#4D000000"
+                            android:gravity="center"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp">
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -104,20 +118,26 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:text="BERLIN" />
+                                    android:text="BERLIN"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
 
                                 <TextView
                                     android:id="@+id/textView9"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:text="18-03-2023" />
+                                    android:text="18-03-2023"
+                                    android:textColor="#FFFFFF" />
 
                                 <Button
                                     android:id="@+id/link2"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
+                                    android:height="40dp"
+                                    android:minHeight="20dp"
                                     android:text="ENTRADES" />
 
                                 <ImageView
@@ -134,7 +154,11 @@
                         <TableRow
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:gravity="center">
+                            android:layout_marginTop="20dp"
+                            android:background="#4D000000"
+                            android:gravity="center"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp">
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -146,20 +170,26 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:text="MADRID" />
+                                    android:text="MADRID"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
 
                                 <TextView
                                     android:id="@+id/textView12"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:text="01-04-2023" />
+                                    android:text="01-04-2023"
+                                    android:textColor="#FFFFFF" />
 
                                 <Button
                                     android:id="@+id/link3"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
+                                    android:height="40dp"
+                                    android:minHeight="20dp"
                                     android:text="ENTRADES" />
 
                                 <ImageView
@@ -177,7 +207,11 @@
                         <TableRow
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:gravity="center">
+                            android:layout_marginTop="20dp"
+                            android:background="#4D000000"
+                            android:gravity="center"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp">
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -189,20 +223,26 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:text="BARCELONA" />
+                                    android:text="BARCELONA"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
 
                                 <TextView
                                     android:id="@+id/textView15"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:text="15-04-2023" />
+                                    android:text="15-04-2023"
+                                    android:textColor="#FFFFFF" />
 
                                 <Button
                                     android:id="@+id/link4"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
+                                    android:height="40dp"
+                                    android:minHeight="20dp"
                                     android:text="ENTRADES" />
 
                                 <ImageView
@@ -219,7 +259,11 @@
                         <TableRow
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:gravity="center">
+                            android:layout_marginTop="20dp"
+                            android:background="#4D000000"
+                            android:gravity="center"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp">
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -231,20 +275,26 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:text="PARIS" />
+                                    android:text="PARIS"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
 
                                 <TextView
                                     android:id="@+id/textView18"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:text="29-04-2023" />
+                                    android:text="29-04-2023"
+                                    android:textColor="#FFFFFF" />
 
                                 <Button
                                     android:id="@+id/link5"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
+                                    android:height="40dp"
+                                    android:minHeight="20dp"
                                     android:text="ENTRADES" />
 
                                 <ImageView

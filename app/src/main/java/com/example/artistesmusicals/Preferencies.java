@@ -14,14 +14,16 @@ public class Preferencies extends AppCompatActivity {
         setContentView(R.layout.preferencies);
 
     }
-    CheckBox sofons= (CheckBox) findViewById(R.id.checkBox);
-    CheckBox efectesso= (CheckBox) findViewById(R.id.checkBox2);
+    //CheckBox sofons= (CheckBox) findViewById(R.id.checkBox);
+    //CheckBox efectesso= (CheckBox) findViewById(R.id.checkBox2);
     public void onCheckedChanged() {
+        /**
         if (sofons.isChecked()==true) {
             Concerts.mediaPlayer2.stop();
         }
         if (efectesso.isChecked()==true) {
             MainActivity.mediaPlayer.stop();
         }
+         **/
     }
 }
