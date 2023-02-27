@@ -9,14 +9,12 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-
+    public static MediaPlayer mediaPlayer;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        MediaPlayer mediaPlayer=MediaPlayer.create(this, R.raw.efecteboto);
-
+        mediaPlayer=MediaPlayer.create(this, R.raw.efecteboto);
         Button btnLocalitatas = (Button) findViewById(R.id.btnLocalitzacions);
         btnLocalitatas.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -34,9 +32,9 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(myIntent2);
             }
         });
-        Button btnPreferencies = (Button) findViewById(R.id.btnpeferencies);
-        btnPreferencies.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
+        Button prefeBtn = (Button) findViewById(R.id.btnpeferencies);
+        prefeBtn.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v){
                 mediaPlayer.start();
                 Intent myIntent3 = new Intent(v.getContext(), Preferencies.class);
                 startActivity(myIntent3);

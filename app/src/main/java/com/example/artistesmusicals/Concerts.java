@@ -10,12 +10,13 @@ import android.view.View;
 import android.widget.Button;
 
 public class Concerts extends AppCompatActivity{
+    public static MediaPlayer mediaPlayer2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.concerts);
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.tigini);
-        mediaPlayer.start();
+        mediaPlayer2 = MediaPlayer.create(this, R.raw.tigini);
+        mediaPlayer2.start();
 
         Button btnLink1 = (Button) findViewById(R.id.link1);
         btnLink1.setOnClickListener(new View.OnClickListener() {
