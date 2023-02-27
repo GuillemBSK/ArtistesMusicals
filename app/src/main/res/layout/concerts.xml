@@ -2,9 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/background"
+    android:id="@+id/l"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -24,14 +25,14 @@
 
             <TextView
                 android:id="@+id/textView20"
-                android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="CONCERTS"
                 android:fontFamily="sans-serif-smallcaps"
+                android:gravity="center"
+                android:text="CONCERTS"
                 android:textColor="#FFFFFF"
                 android:textSize="34sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
             <Space
                 android:layout_width="match_parent"
@@ -44,7 +45,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical" >
+                    android:gravity="center"
+                    android:orientation="vertical">
 
                     <TableLayout
                         android:layout_width="match_parent"
@@ -64,25 +66,25 @@
                                     android:id="@+id/textView2"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:text="TextView" />
+                                    android:text="LONDRES" />
 
                                 <TextView
                                     android:id="@+id/textView4"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:text="TextView" />
+                                    android:text="04-03-2023" />
 
-                                <TextView
-                                    android:id="@+id/textView3"
+                                <Button
+                                    android:id="@+id/link1"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:text="TextView" />
+                                    android:text="ENTRADES" />
 
                                 <ImageView
-                                    android:id="@+id/imageView7"
+                                    android:id="@+id/imageView6"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    app:srcCompat="@android:drawable/btn_dialog" />
+                                    app:srcCompat="@drawable/londres" />
 
                             </LinearLayout>
                         </TableRow>
@@ -102,28 +104,29 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:text="TextView" />
+                                    android:text="BERLIN" />
 
                                 <TextView
                                     android:id="@+id/textView9"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:text="TextView" />
+                                    android:text="18-03-2023" />
 
-                                <TextView
-                                    android:id="@+id/textView10"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:text="TextView" />
-
-                                <ImageView
-                                    android:id="@+id/imageView2"
+                                <Button
+                                    android:id="@+id/link2"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    tools:srcCompat="@android:drawable/btn_dialog" />
+                                    android:text="ENTRADES" />
+
+                                <ImageView
+                                    android:id="@+id/imageView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/berlin" />
+
                             </LinearLayout>
 
                         </TableRow>
@@ -143,28 +146,29 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:text="TextView" />
+                                    android:text="MADRID" />
 
                                 <TextView
                                     android:id="@+id/textView12"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:text="TextView" />
+                                    android:text="01-04-2023" />
 
-                                <TextView
-                                    android:id="@+id/textView13"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:text="TextView" />
-
-                                <ImageView
-                                    android:id="@+id/imageView3"
+                                <Button
+                                    android:id="@+id/link3"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    tools:srcCompat="@android:drawable/btn_dialog" />
+                                    android:text="ENTRADES" />
+
+                                <ImageView
+                                    android:id="@+id/imageView2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/madrid" />
+
                             </LinearLayout>
 
                         </TableRow>
@@ -185,28 +189,29 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:text="TextView" />
+                                    android:text="BARCELONA" />
 
                                 <TextView
                                     android:id="@+id/textView15"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:text="TextView" />
+                                    android:text="15-04-2023" />
 
-                                <TextView
-                                    android:id="@+id/textView16"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:text="TextView" />
-
-                                <ImageView
-                                    android:id="@+id/imageView4"
+                                <Button
+                                    android:id="@+id/link4"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    tools:srcCompat="@android:drawable/btn_dialog" />
+                                    android:text="ENTRADES" />
+
+                                <ImageView
+                                    android:id="@+id/imageView3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/barna" />
+
                             </LinearLayout>
 
                         </TableRow>
@@ -226,28 +231,34 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:text="TextView" />
+                                    android:text="PARIS" />
 
                                 <TextView
                                     android:id="@+id/textView18"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:text="TextView" />
+                                    android:text="29-04-2023" />
 
-                                <TextView
-                                    android:id="@+id/textView19"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:text="TextView" />
-
-                                <ImageView
-                                    android:id="@+id/imageView5"
+                                <Button
+                                    android:id="@+id/link5"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    tools:srcCompat="@android:drawable/btn_dialog" />
+                                    android:text="ENTRADES" />
+
+                                <ImageView
+                                    android:id="@+id/imageView7"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/paris" />
+
+                                <Space
+                                    android:layout_width="match_parent"
+                                    android:layout_height="25dp"
+                                    android:layout_weight="1" />
+
                             </LinearLayout>
 
                         </TableRow>
