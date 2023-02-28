@@ -25,14 +25,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
     }
 
-    /**
-     * Marcador a l'institut Jaume Huguet
-     */
     @Override
     public void onMapReady(GoogleMap googleMap) {
 
         LatLng institut = new LatLng(41.289558967903304, 1.2459889876953898);
-        googleMap.addMarker(new MarkerOptions().position(institut).title("Jaume Huguet").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
+        googleMap.addMarker(new MarkerOptions().position(institut).title("Jaume Huguet").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_azul)));
 
         LatLng madrid = new LatLng(40.4167047, -3.7035825);
         googleMap.addMarker(new MarkerOptions().position(madrid).title("Madrid").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));

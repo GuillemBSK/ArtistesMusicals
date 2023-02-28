@@ -11,12 +11,26 @@ import android.widget.Button;
 
 public class Concerts extends AppCompatActivity{
     public static MediaPlayer mediaPlayer2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.concerts);
+
         mediaPlayer2 = MediaPlayer.create(this, R.raw.tigini);
-        mediaPlayer2.start();
+        if(MainActivity.getSoActivat() == false){
+            mediaPlayer2.stop();
+        }else{
+            mediaPlayer2.start();
+        }
+
+        Button btnEnrere = findViewById(R.id.btnEnrere);
+        btnEnrere.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                mediaPlayer2.stop();
+                finish();
+            }
+        });
 
         Button btnLink1 = (Button) findViewById(R.id.link1);
         btnLink1.setOnClickListener(new View.OnClickListener() {

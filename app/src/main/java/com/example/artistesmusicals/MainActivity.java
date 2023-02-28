@@ -10,15 +10,26 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
     public static MediaPlayer mediaPlayer;
+    private static Boolean soActivat = true;
+
+    public void ActivaSo(Boolean b){
+        mediaPlayer=MediaPlayer.create(this, R.raw.efecteboto);
+        if(b){
+            mediaPlayer.start();
+        }else{
+            mediaPlayer.stop();
+        }
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mediaPlayer=MediaPlayer.create(this, R.raw.efecteboto);
+
         Button btnLocalitatas = (Button) findViewById(R.id.btnLocalitzacions);
         btnLocalitatas.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                mediaPlayer.start();
+                ActivaSo(soActivat);
                 Intent myIntent = new Intent(v.getContext(), MapsActivity.class);
                 startActivity(myIntent);
             }
@@ -27,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         Button btnConcerts = (Button) findViewById(R.id.btnConcerts);
         btnConcerts.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                mediaPlayer.start();
+                ActivaSo(soActivat);
                 Intent myIntent2 = new Intent(v.getContext(), Concerts.class);
                 startActivity(myIntent2);
             }
@@ -35,10 +46,18 @@ public class MainActivity extends AppCompatActivity {
         Button prefeBtn = (Button) findViewById(R.id.btnpeferencies);
         prefeBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v){
-                mediaPlayer.start();
+                ActivaSo(soActivat);
                 Intent myIntent3 = new Intent(v.getContext(), Preferencies.class);
                 startActivity(myIntent3);
             }
         });
+    }
+
+    public static void setSoActivat(Boolean b) {
+        soActivat = b;
+    }
+
+    public static Boolean getSoActivat() {
+        return soActivat;
     }
 }
