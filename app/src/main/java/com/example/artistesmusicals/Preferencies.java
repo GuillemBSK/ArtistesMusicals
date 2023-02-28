@@ -17,9 +17,8 @@ public class Preferencies extends AppCompatActivity {
         //FEM VISIBLE EL LAYOUT DE PREFERENCIES
         setContentView(R.layout.preferencies);
 
-        //IDENTIFIQUEM ELS DOS CHECKBOX QUE TENIM
+        //IDENTIFIQUEM EL CHECKBOX QUE TENIM
         CheckBox sofons= (CheckBox) findViewById(R.id.checkBox);
-        CheckBox efectesso= (CheckBox) findViewById(R.id.checkBox2);
 
         //FEM UN BOOLEAN PER DONAR UN VALOR ALS CHECKBOX
         boolean checked = PreferenceManager.getDefaultSharedPreferences(this)
@@ -27,7 +26,6 @@ public class Preferencies extends AppCompatActivity {
 
         //AFEGIM EL BOLEAN ALS DOS CHECKBOX
         sofons.setChecked(checked);
-        efectesso.setChecked(checked);
 
         //IDENTIFIQUEM EL BOTO PER GUARDAR LES PREFERENCIES DE L'USUARI
         Button btnGuardaPreferencies = findViewById(R.id.btnGuardaPreferencies);
